@@ -2,17 +2,25 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://javaops.ru payload.xsd">
     <Users>
-        <User flag="active" city="kiv">
-            <email>gmail@gmail.com</email>
+        <User flag="active" city="kiv" email="gmail@gmail.com">
             <fullName>Full Name</fullName>
+            <Groups>
+                <group>topjava01</group>
+            </Groups>
         </User>
-        <User flag="superuser" city="spb">
-            <email>admin@javaops.ru</email>
+        <User flag="superuser" city="spb" email="admin@javaops.ru">
             <fullName>Admin</fullName>
+            <Groups>
+                <group>topjava07</group>
+                <group>topjava08</group>
+                <group>masterjava01</group>
+            </Groups>
         </User>
-        <User flag="deleted" city="spb">
-            <email>mail@yandex.ru</email>
+        <User flag="deleted" city="spb" email="mail@yandex.ru">
             <fullName>Deleted</fullName>
+            <Groups>
+                <group>topjava02</group>
+            </Groups>
         </User>
     </Users>
     <Cities>
@@ -20,4 +28,31 @@
         <City id="kiv">Киев</City>
         <City id="mnsk">Минск</City>
     </Cities>
+    <Projects>
+        <Project id="topjava">
+            <title>topjava</title>
+            <description>topjava</description>
+        </Project>
+        <Project id="masterjava">
+            <title>masterjava</title>
+            <description>masterjava</description>
+        </Project>
+    </Projects>
+    <Groups>
+        <Group type="FINISHED" project="topjava" id="topjava01">
+            <name>topjava01</name>
+        </Group>
+        <Group type="FINISHED" project="topjava" id="topjava02">
+            <name>topjava02</name>
+        </Group>
+        <Group type="CURRENT" project="topjava" id="topjava07">
+            <name>topjava07</name>
+        </Group>
+        <Group type="REGISTERING" project="topjava" id="topjava08">
+            <name>topjava08</name>
+        </Group>
+        <Group type="CURRENT" project="masterjava" id="masterjava01">
+            <name>masterjava01</name>
+        </Group>
+    </Groups>
 </Payload>
